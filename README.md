@@ -1,5 +1,3 @@
-I'll help create a detailed README.md for your cryptocurrency data crawler. Here's the expanded version:
-
 ```markdown:cryptocurrency-scraper/README.md
 # Cryptocurrency Data Crawler
 
