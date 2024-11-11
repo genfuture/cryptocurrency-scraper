@@ -23,7 +23,7 @@ A robust Node.js script that fetches comprehensive cryptocurrency data from the 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/genfuture/crypto-scraper.git
+git clone https://github.com/genfuture/cryptocurrency-scraper.git
 ```
 
 2. Install dependencies:
