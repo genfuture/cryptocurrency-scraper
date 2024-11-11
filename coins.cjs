@@ -202,17 +202,9 @@ async function processCoinsSequentially(coins, startIndex = 0) {
       addedDate: Date.now().toString(),
       coinMarketCap: true,
       coingecko: true,
-      type: 'certified',
-      votes: Math.floor(Math.random() * 500),
-      ownerId: "yQQYy5QwkDXv54Tio7ExFHeuV722",
       chain: details.asset_platform_id || '', // Using asset_platform_id, defaulting to 'BSC' if not available
       launchDate: details.genesis_date || '',
-      presale: true, // This might need to be determined differently
-      presaleDate: details.ico_data?.ico_start_date || '',
       token: true, // This might need to be determined differently
-      uniswap: true, // This might need to be determined differently
-      pooCoin: true, // This might need to be determined differently
-      pancakeswap: false, // This might need to be determined differently
       description: details.description,
       explorerLink: details.blockchain_site || '',
       address: getAllPlatformAddresses(details.platforms),
