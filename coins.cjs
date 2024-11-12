@@ -249,9 +249,9 @@ async function processCoinsSequentially(coins, startIndex = 0) {
 async function fetchCoinData() {
   try {
     let allCoins = [];
-    const perPage = 250;
-    let page = 1;
-    const maxPages = 1;
+    const perPage = 150; //set the coins here
+    let page = 1; 
+    const maxPages = 1; //set the pages here
 
     while (page <= maxPages) {
       console.log(`Fetching page ${page}...`);
