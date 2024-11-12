@@ -26,6 +26,11 @@ jobs:
 
     - name: Run Coin Data Fetch Script
       run: node coins.cjs 
+      
+    - name: Reset Progress File
+      if: success()
+      run: |
+        echo '{"lastProcessedIndex":-1}' > progress.json
 
     - name: Save JSON to Artifact
       if: success()
@@ -35,10 +40,7 @@ jobs:
         path: customCoinData.json  # The output JSON file
         retention-days: 5          # Retain data for a set number of days (optional)
 
-    - name: Reset Progress File
-      if: success()
-      run: |
-        echo '{"lastProcessedIndex":-1}' > progress.json
+    
 
     - name: Commit and Push Progress
       env:
@@ -47,5 +49,5 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add customCoinData.json progress.json
-        git commit -m "Update coin data and reset progress"
+        git commit -m "Update Coin Data"
         git push https://x-access-token:${GITHUB_TOKEN}@github.com/genfuture/cryptocurrency-scraper.git main
