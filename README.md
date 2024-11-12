@@ -1,5 +1,5 @@
 ```markdown:cryptocurrency-scraper/README.md
-# Cryptocurrency Data Crawler
+# Cryptocurrency Data Crawler (Updates CustomCoinData.json Every 12 hours)
 
 A robust Node.js script that fetches comprehensive cryptocurrency data from the CoinGecko API, including market data, social media links, and technical details for the top cryptocurrencies by market cap.
 
