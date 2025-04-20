@@ -43,7 +43,7 @@ jobs:
         retention-days: 5
 
     - name: Commit and Push Changes
-      uses: actions-rs/git-auto-commit@v4
+      uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: "Update Coin Data [bot]"
         branch: main
